@@ -1,339 +1,537 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Dzakwan Dawsie</title>
-  </head>
-  <body>
-    <div class="hero">
-      <div class="overlay">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#" >Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#intro" onclick="scrollToDiv('.about')">Intro</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#experience" onclick="scrollToDiv('.milestones')">Experience</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#project" onclick="scrollToDiv('.project')">Project</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact" onclick="scrollToDiv('.contact')">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <div class="intro d-flex">
-          <div class="m-auto text-white text-center">
-            <h2>Dzakwan Dawsie (Zack)</h2>
-            <span>
-              Android Developer - Backend
-            </span>
-            <br>
-            <br>
-            <br>
-            <a href="#intro" onclick="scrollToDiv('.about')"><button type="button" class="btn btn-outline-primary" name="button">Scroll to more</button></a>
-          </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineer Portfolio</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">Portfolio</div>
+            <nav class="nav">
+                <a href="#introduction">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#volunteer">Volunteer</a>
+                <a href="#competitive">Awards</a>
+                <a href="#projects">Projects</a>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"/>
+                    <line x1="12" y1="1" x2="12" y2="3"/>
+                    <line x1="12" y1="21" x2="12" y2="23"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                    <line x1="1" y1="12" x2="3" y2="12"/>
+                    <line x1="21" y1="12" x2="23" y2="12"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </button>
         </div>
-      </div>
-    </div>
+    </header>
 
-    <div class="about text-white">
-      <div class="MyIntro pb-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h4 class="text-center"><span class="border-bottom border-white">My Intro</span></h4>
-              <br><br>
-              <h5 class="text-center">"Hello World"</h5>
-              <p>
-                My name is <b>Dzakwan Dawsie</b> i'm work as Android developer & Backend . I studied computer since I was 8 years old, and got to know the programming language since the age of 14 years, i also interest about design and game developing.
-              </p>
-              <br>
-              <div class="widget-body d-flex">
-                <div class="circle-widget mx-auto">
-                  <div class="circle-widget-2">
-                    <div class="circle-widget-3"></div>
-                  </div>
-                </div>
-              </div>
-
-              <div id="skill-1">
-                <div class="d-flex">
-                  <label class="mr-auto">Laravel</label>
-                  <label class="font-sfLight">&nbsp;</label>
-                </div>
-                <div class="progress" style="height: 3px;">
-                  <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <br>
-              <div id="skill-2">
-                <div class="d-flex">
-                  <label class="mr-auto">NodeJS</label>
-                  <label class="font-sfLight">&nbsp;</label>
-                </div>
-                <div class="progress" style="height: 3px;">
-                  <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <br>
-              <div id="skill-3">
-                <div class="d-flex">
-                  <label class="mr-auto">NestJS</label>
-                  <label class="font-sfLight">&nbsp;</label>
-                </div>
-                <div class="progress" style="height: 3px;">
-                  <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <br>
-              <div id="skill-4">
-                <div class="d-flex">
-                  <label class="mr-auto">NextJS</label>
-                  <label class="font-sfLight">&nbsp;</label>
-                </div>
-                <div class="progress" style="height: 3px;">
-                  <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <br>
-              <div id="skill-5">
-                <div class="d-flex">
-                  <label class="mr-auto">Android Native</label>
-                  <label class="font-sfLight">&nbsp;</label>
-                </div>
-                <div class="progress" style="height: 3px;">
-                  <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="1000" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <br>
-              <div id="skill-6">
-                <div class="d-flex">
-                  <label class="mr-auto">Kotlin</label>
-                  <label class="font-sfLight">&nbsp;</label>
-                </div>
-                <div class="progress" style="height: 3px;">
-                  <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="1000" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="milestones text-white">
-      <div class="milestones-overlay">
-        <div class="container h-100">
-          <div class="row">
-            <div class="col-md-12 p-3">
-              <h4 class="text-center"><span class="font-sfLight">Experience</span></h4>
-              <br>
-            </div>
-          </div>
-          <div class="row">
-             <div class="col-md-4 my-3">
-              <div class="card card-experience">
-                <div class="card-body">
-                  <h5 class="card-title text-center">Indonesia Android Kejar</h5>
-                  <h6 class="card-title text-center">Facilitator Beginner</h5>
-                  <p class="card-text">Become a Facilitator for beginner</p>
-                  <div class="text-center">
-                    <a href="https://events.withgoogle.com/indonesiaandroidkejar" target="_blank" class="btn btn-outline-primary btn-sm">Detail Event</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 my-3">
-              <div class="card card-experience">
-                <div class="card-body">
-                  <h5 class="card-title text-center">Line Creative 2017</h5>
-                  <h6 class="card-title text-center">Line Bot Developer Challenge</h5>
-                  <p class="card-text">Create backend for line chatbot "Nora".</p>
-                  <div class="text-center">
-                    <a href="https://www.dicoding.com/challenges/279" target="_blank" class="btn btn-outline-primary btn-sm">Detail Challenge</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 my-3">
-              <div class="card card-experience">
-                <div class="card-body">
-                  <h5 class="card-title text-center">DBS Live More Society</h5>
-                  <h6 class="card-title text-center">Developer Challenge 2</h5>
-                  <p class="card-text">Create Apps "Walas" & "Nota"</p>
-                  <div class="text-center">
-                    <a href="https://www.dicoding.com/challenges/333" target="_blank" class="btn btn-outline-primary btn-sm">Detail Challenge</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 my-3">
-              <div class="card card-experience">
-                <div class="card-body">
-                  <h5 class="card-title text-center">Permata YouthPreneur 2018</h5>
-                  <h6 class="card-title text-center">Student Entrepreneur</h5>
-                  <p class="card-text">My team become the best team.</p>
-                  <div class="text-center">
-                    <a href="http://www.smktarunabhakti.net/2018/05/08/siswa-rpl-smk-taruna-bhakti-turut-serta-dalam-program-permata-youthpreneur-2018" target="_blank" class="btn btn-outline-primary btn-sm">Detail</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 my-3">
-              <div class="card card-experience">
-                <div class="card-body">
-                  <h5 class="card-title text-center">Line Creative 2018</h5>
-                  <h6 class="card-title text-center">Chatbot Competition (Student Category)</h5>
-                  <p class="card-text">Create backend for line chatbot "Walas".</p>
-                  <div class="text-center">
-                    <a href="https://www.dicoding.com/challenges/431" target="_blank" class="btn btn-outline-primary btn-sm">Detail Challenge</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 my-3">
-              <div class="card card-experience">
-                <div class="card-body">
-                  <h5 class="card-title text-center">Internship (2018-2019)</h5>
-                  <h6 class="card-title text-center">Web Developer</h5>
-                  <p class="card-text">Internship as a Web Developer at Synchro</p>
-                  <div class="text-center">
-                    <a href="https://synchro.co.id" target="_blank" class="btn btn-outline-primary btn-sm">Detail Company</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 my-3">
-              <div class="card card-experience">
-                <div class="card-body">
-                  <h5 class="card-title text-center">Working at anilo (2019-Present)</h5>
-                  <h6 class="card-title text-center">Web Developer</h5>
-                  <p class="card-text"><br>Work as a Web Developer at anilo.id <br><br></p>
-                  <div class="text-center">
-                    <a href="https://anilo.id" target="_blank" class="btn btn-outline-primary btn-sm">Detail Company</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 my-3">
-              <div class="card card-experience">
-                <div class="card-body">
-                  <h5 class="card-title text-center">Study at Bangkit (2024-Present)</h5>
-                  <h6 class="card-title text-center">Mobile Development</h5>
-                  <p class="card-text">Mobile Development Cohort at Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka</p>
-                  <div class="text-center">
-                    <a href="https://grow.google/intl/id_id/bangkit" target="_blank" class="btn btn-outline-primary btn-sm">Detail</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="project text-white">
-      <div class="pb-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h4 class="text-center"><span class="border-bottom border-white">Project</span></h4>
-              <div class="row">
-                <div class="col-md-4 my-3">
-                  <div class="card card-project">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Lolboost</h5>
-                      <h6 class="card-title text-center">Elo Boosting, done right.</h5>
-                      <p class="card-text">Create website Boosting for League of Legends using PHP + Laravel</p>
-                      <div class="text-center">
-                        <a href="http://lolboost.zeblogic.com" target="_blank" class="btn btn-outline-primary btn-sm">Visit</a>
-                      </div>
+    <main>
+        <!-- Introduction Section -->
+        <section id="introduction" class="section-introduction">
+            <div class="container">
+                <div class="intro-content">
+                    <div class="intro-avatar">
+                        <div class="avatar-glow"></div>
+                        <img src="assets/photo.jpg" alt="Profile Avatar" class="avatar-img">
                     </div>
-                  </div>
-                </div>
-                <div class="col-md-4 my-3">
-                  <div class="card card-project">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Simple Bookshelf</h5>
-                      <h6 class="card-title text-center">List the books you are reading.</h5>
-                      <p class="card-text">Create website for listing the books using HTML + Web Storage</p>
-                      <div class="text-center">
-                        <a href="https://dzakwandawsie.github.io/external/bookshelf" target="_blank" class="btn btn-outline-primary btn-sm">Visit</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 my-3">
-                  <div class="card card-project">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Peoes</h5>
-                      <h6 class="card-title text-center">Manage your order.</h5>
-                      <p class="card-text">Create POS website for manage inventory, order and report transaction.</p>
-                      <div class="text-center">
-                        <a href="https://peoes.vercel.app" target="_blank" class="btn btn-outline-primary btn-sm">Visit</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+                    <div class="intro-text">
+                        <span class="badge">Available for opportunities</span>
+                        <h1 class="intro-name">Dzakwan Dawsie</h1>
+                        <h2 class="intro-title">Software Engineer</h2>
+                        <p class="intro-bio">Software Engineer with over 5 years of experience in web development, 1 year in backend, and 3 years in mobile development. A Bachelor’s degree holder in Information Systems from Gunadarma University and ranked in the Top 10% of Bangkit Academy 2024 (a national technology program led by Google). Experienced in building large-scale web and Android applications using Laravel, Next.js, Kotlin, Jetpack Compose, and Firebase, and certified as an Android Developer Expert and Dev Certified for Android.</p>
+                        
+                        <div class="intro-info">
+                            <div class="info-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span>Depok, Indonesia</span>
+                            </div>
+                            <div class="info-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                <span>d.dawsie136@gmail.com</span>
+                            </div>
+                        </div>
 
-    <div class="contact text-white">
-      <div class="pb-3">
+                        <div class="intro-buttons">
+                            <button id="download-cv-btn" class="btn btn-secondary">Download CV</button>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/DzakwanDawsie" target="_blank" class="social-link" aria-label="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="http://linkedin.com/in/dzakwan-dawsie" target="_blank" class="social-link" aria-label="LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section-skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Technical Skills</h2>
+                    <p>Technologies and tools I work with</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Mobile Development</h3>
+                        <div class="skill-tags">
+                            <span class="tag">Kotlin</span>
+                            <span class="tag">Jetpack Compose</span>
+                            <span class="tag">Flutter</span>
+                            <span class="tag">MVVM</span>
+                            <span class="tag">Espreso</span>
+                            <span class="tag">JUnit</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Web Development</h3>
+                        <div class="skill-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Javascript</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Next.js</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">Laravel</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Backend</h3>
+                        <div class="skill-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">NestJS</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">Laravel</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Tools</h3>
+                        <div class="skill-tags">
+                            <span class="tag">VS Code</span>
+                            <span class="tag">Android Studio</span>
+                            <span class="tag">Figma</span>
+                            <span class="tag">Postman</span>
+                            <span class="tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section-experience">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Work Experience</h2>
+                    <p>My professional journey</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div class="experience-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3>Web Developer</h3>
+                                    <p class="company">anilo</p>
+                                    <p class="duration">05/2019 - Present</p>
+                                </div>
+                            </div>
+                            <p class="description">Developed and maintained various dashboards and web applications using Laravel and Next.js, ensuring stable performance and smooth user experience. <br/>Built and maintained backend services with Laravel and NestJS, improving system reliability and supporting seamless integration with frontend applications.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">Laravel</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">NestJS</span>
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div class="experience-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3>Data Entry</h3>
+                                    <p class="company">Golkar</p>
+                                    <p class="duration">04/2019 - 04/2019</p>
+                                </div>
+                            </div>
+                            <p class="description">Responsible for entering and managing data for the 2019 general election to ensure accuracy and completeness.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Microsoft Excel</span>
+                                <span class="tech-tag">Google Chrome</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div class="experience-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3>Web Developer Internship</h3>
+                                    <p class="company">PT. National Data Integrator</p>
+                                    <p class="duration">12/2018 - 02/2019</p>
+                                </div>
+                            </div>
+                            <p class="description">Collaborated in developing a dashboard for government budget management</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">Codeigniter 3</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Volunteer Section -->
+        <section id="volunteer" class="section-volunteer">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Volunteer Experience</h2>
+                    <p>Community contributions and training</p>
+                </div>
+                <div class="volunteer-card">
+                    <div class="volunteer-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                        </svg>
+                    </div>
+                    <div class="volunteer-content">
+                        <h3>Beginner Facilitator for Android</h3>
+                        <p class="company">Indonesia Android Kejar</p>
+                        <p class="duration">11/2017 - 12/2017</p>
+                        <p class="description">Facilitated beginner-level Android development sessions under Google Developers' "Indonesia Android Kejar" program, guiding participants in Android fundamentals and hands-on app building.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Android</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Android Studio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Competitive Section -->
+        <section id="competitive" class="section-competitive">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Competitions & Awards</h2>
+                    <p>Recognition and achievements</p>
+                </div>
+                <div class="competitive-grid">
+                    <div class="award-card trophy">
+                        <div class="award-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+                                <path d="M4 22h16"/>
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/>
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/>
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>
+                            </svg>
+                        </div>
+                        <div class="award-content">
+                            <h3>Permata Youth Preneur 2018</h3>
+                            <div class="award-meta">
+                                <span class="rank">1st Place</span>
+                                <span class="divider">•</span>
+                                <span class="date">2018</span>
+                            </div>
+                            <p>Developed a fintech mobile app recognized as Best Fintech App and awarded Best Team at Permata Youth Preneur 2018 by Permata Bank.</p>
+                        </div>
+                    </div>
+                    <div class="award-card">
+                        <div class="award-icon medal">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"/>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                            </svg>
+                        </div>
+                        <div class="award-content">
+                            <h3>LINE Creativate 2018 - Chatbot Competition</h3>
+                            <div class="award-meta">
+                                <span class="rank">Top 60 Indonesia</span>
+                                <span class="divider">•</span>
+                                <span class="date">2018</span>
+                            </div>
+                            <p>Developed a digital product based on a LINE Chatbot designed to assist and benefit people across Indonesia, open for participation by students from junior high school, senior high school, vocational school, and university levels.</p>
+                        </div>
+                    </div>
+                    <div class="award-card">
+                        <div class="award-icon medal">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"/>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                            </svg>
+                        </div>
+                        <div class="award-content">
+                            <h3>DBS Live More Society: Developer Challenge 2</h3>
+                            <div class="award-meta">
+                                <span class="rank">Top 100 Indonesia</span>
+                                <span class="divider">•</span>
+                                <span class="date">2018</span>
+                            </div>
+                            <p>Developed an Android application focusing on interests and inspirations related to money management.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section-projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Projects</h2>
+                    <p>Some of my recent work</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-type="live">
+                        <div class="project-image">
+                            <img src="assets/snapshots/serenity/thumbnail.png" alt="Serenity">
+                        </div>
+                        <div class="project-content">
+                            <h3>Serenity</h3>
+                            <p>
+                              An Android Application designed to help people manage their screen time to enhance their well-being. <br>
+                              Main Features:<br>
+                              - Social Media Screen Time Monitoring <br>
+                              - Break Reminder <br>
+                              - Predict Sentiment <br>
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Native Android</span>
+                                <span class="tech-tag">Kotlin</span>
+                                <span class="tech-tag">Android Studio</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://www.linkedin.com/posts/dzakwan-dawsie_lifeatbangkit-bepchallenge-2ndchallenge-activity-7277331532183171072-KYMV" class="btn-filled" target="_blank">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15 3 21 3 21 9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                    Presentation
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-type="snapshot" 
+                         data-screenshots='["assets/snapshots/chorona/Splash.jpeg", "assets/snapshots/chorona/Home.jpeg", "assets/snapshots/chorona/Laporan.jpeg", "assets/snapshots/chorona/Maps.jpeg", "assets/snapshots/chorona/Telusuri.jpeg", "assets/snapshots/chorona/Periksa_1.jpeg", "assets/snapshots/chorona/Periksa_2.jpeg"]'>
+                        <div class="project-image">
+                            <img src="assets/snapshots/chorona/thumbnail.jpeg" alt="Chorona">
+                        </div>
+                        <div class="project-content">
+                            <h3>Chorona</h3>
+                            <p>An Android application that monitors the development of Covid-19 cases across different regions in Indonesia. It features a prevention tips page to help users recognize symptoms and stay safe, as well as an integrated chatbot for health-related consultations.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Native Android</span>
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Android Studio</span>
+                            </div>
+                            <div class="project-buttons">
+                                <button class="btn-filled snapshot-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                        <circle cx="8.5" cy="8.5" r="1.5"/>
+                                        <polyline points="21 15 16 10 5 21"/>
+                                    </svg>
+                                    Snapshots
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-type="live">
+                        <div class="project-image">
+                            <img src="assets/snapshots/peoes/thumbnail.png" alt="Simple Bookshelf">
+                        </div>
+                        <div class="project-content">
+                            <h3>Peoes</h3>
+                            <p>A simple web-based Point of Sale (POS) application designed to assist cashiers in handling orders, managing inventory, and monitoring transactions.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Next</span>
+                                <span class="tech-tag">Web Storage</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://peoes.vercel.app" class="btn-filled" target="_blank">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15 3 21 3 21 9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-type="snapshot" 
+                         data-screenshots='["assets/snapshots/line-walas/1.Add.png", "assets/snapshots/line-walas/2_1.Catat_Pemasukan.png", "assets/snapshots/line-walas/2_2.Catat_Pengeluaran.png", "assets/snapshots/line-walas/2.Pemasukan&Pengeluaran.png", "assets/snapshots/line-walas/3_1.Cek_Pemasukan.png", "assets/snapshots/line-walas/3_2.Cek_Pengeluaran.png", "assets/snapshots/line-walas/4.Statistik.png", "assets/snapshots/line-walas/5_1.Cek_Kurs.png", "assets/snapshots/line-walas/5.Kurs.png"]'>
+                        <div class="project-image">
+                            <img src="assets/snapshots/line-walas/thumbnail.png" alt="Walas (Line Chatbot)">
+                        </div>
+                        <div class="project-content">
+                            <h3>Walas (Line Chatbot)</h3>
+                            <p>An interactive LINE Chatbot that helps users manage their finances by recording income and expenses. It also provides statistical reports to make financial tracking easier and more insightful.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Node.Js</span>
+                                <span class="tech-tag">Line Messaging API SDKs</span>
+                            </div>
+                            <div class="project-buttons">
+                                <button class="btn-filled snapshot-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                        <circle cx="8.5" cy="8.5" r="1.5"/>
+                                        <polyline points="21 15 16 10 5 21"/>
+                                    </svg>
+                                    Snapshots
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-type="live">
+                        <div class="project-image">
+                            <img src="external/bookshelf/assets/img/thumbnail.jpg" alt="Simple Bookshelf">
+                        </div>
+                        <div class="project-content">
+                            <h3>Simple Bookshelf</h3>
+                            <p>A simple bookshelf web application for tracking books that have been read or are yet to be finished.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">HTML 5</span>
+                                <span class="tech-tag">Javascript</span>
+                                <span class="tech-tag">Web Storage</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="external/bookshelf/index.html" class="btn-filled" target="_blank">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15 3 21 3 21 9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h4 class="text-center"><span class="border-bottom border-white">Contact</span></h4>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Dzakwan Dawsie</h3>
+                    <p class="footer-subtitle">Software Engineer</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#introduction">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#volunteer">Volunteer</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="https://github.com/DzakwanDawsie" target="_blank" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="http://linkedin.com/in/dzakwan-dawsie" target="_blank" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="row pt-5">
-            <div class="col-md-4">
-              <h5 class="text-left text-contact">Location</h4>
-              <h6 class="text-left">Indonesia , Depok</h4>
-            </div>
-            <div class="col-md-4">
-              <h5 class="text-left text-contact">Phone</h4>
-              <h6 class="text-left">+62 85156061584</h4>
-            </div>
-            <div class="col-md-4">
-              <h5 class="text-left text-contact">Email</h4>
-              <h6 class="text-left">d.dawsie136@gmail.com</h4>
-            </div>
-          </div>
         </div>
-      </div>
+    </footer>
+
+    <!-- Screenshot Modal -->
+    <div id="screenshotModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Project Snapshots</h3>
+                <button class="modal-close" id="closeModal" aria-label="Close modal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="screenshotGallery" class="screenshot-gallery"></div>
+            </div>
+            <div class="modal-footer">
+                <div class="screenshot-counter">
+                    <span id="currentImage">1</span> / <span id="totalImages">0</span>
+                </div>
+            </div>
+        </div>
     </div>
 
-  </body>
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-  <script type="text/javascript">
-    function scrollToDiv(div) {
-      $(document).ready(function() {
-        var position = $(div).offset();
-        $('html , body').animate({
-          scrollTop : position.top
-        },position.top);
-      });
-    }
-  </script>
+    <script src="assets/script.js"></script>
+</body>
 </html>
