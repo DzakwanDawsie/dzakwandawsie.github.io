@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Engineer Portfolio</title>
+    <title>Dzakwan Dawsie Portfolio</title>
     <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container header-content">
-            <div class="logo">Portfolio</div>
+            <div class="logo">Dzakwan Dawsie</div>
             <nav class="nav">
                 <a href="#introduction">About</a>
                 <a href="#skills">Skills</a>
@@ -20,20 +21,8 @@
                 <a href="#projects">Projects</a>
             </nav>
             <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="5"/>
-                    <line x1="12" y1="1" x2="12" y2="3"/>
-                    <line x1="12" y1="21" x2="12" y2="23"/>
-                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-                    <line x1="1" y1="12" x2="3" y2="12"/>
-                    <line x1="21" y1="12" x2="23" y2="12"/>
-                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-                </svg>
-                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-                </svg>
+                <i class="fa-solid fa-sun sun-icon"></i>
+                <i class="fa-solid fa-moon moon-icon"></i>
             </button>
         </div>
     </header>
@@ -55,17 +44,11 @@
                         
                         <div class="intro-info">
                             <div class="info-item">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                    <circle cx="12" cy="10" r="3"/>
-                                </svg>
+                                <i class="fa-solid fa-location-dot"></i>
                                 <span>Depok, Indonesia</span>
                             </div>
                             <div class="info-item">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                    <polyline points="22,6 12,13 2,6"/>
-                                </svg>
+                                <i class="fa-solid fa-envelope"></i>
                                 <span>d.dawsie136@gmail.com</span>
                             </div>
                         </div>
@@ -76,14 +59,10 @@
 
                         <div class="social-links">
                             <a href="https://github.com/DzakwanDawsie" target="_blank" class="social-link" aria-label="GitHub">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                </svg>
+                                <i class="fa-brands fa-github"></i>
                             </a>
                             <a href="http://linkedin.com/in/dzakwan-dawsie" target="_blank" class="social-link" aria-label="LinkedIn">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                                </svg>
+                                <i class="fa-brands fa-linkedin"></i>
                             </a>
                         </div>
                     </div>
@@ -161,10 +140,7 @@
                         <div class="experience-card">
                             <div class="experience-header">
                                 <div class="experience-icon">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-                                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-                                    </svg>
+                                    <i class="fa-solid fa-briefcase"></i>
                                 </div>
                                 <div>
                                     <h3>Web Developer</h3>
@@ -189,10 +165,7 @@
                         <div class="experience-card">
                             <div class="experience-header">
                                 <div class="experience-icon">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-                                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-                                    </svg>
+                                    <i class="fa-solid fa-briefcase"></i>
                                 </div>
                                 <div>
                                     <h3>Data Entry</h3>
@@ -212,10 +185,7 @@
                         <div class="experience-card">
                             <div class="experience-header">
                                 <div class="experience-icon">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-                                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-                                    </svg>
+                                    <i class="fa-solid fa-briefcase"></i>
                                 </div>
                                 <div>
                                     <h3>Web Developer Internship</h3>
@@ -245,9 +215,7 @@
                 </div>
                 <div class="volunteer-card">
                     <div class="volunteer-icon">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-                        </svg>
+                        <i class="fa-solid fa-hand-holding-heart"></i>
                     </div>
                     <div class="volunteer-content">
                         <h3>Beginner Facilitator for Android</h3>
@@ -274,14 +242,7 @@
                 <div class="competitive-grid">
                     <div class="award-card trophy">
                         <div class="award-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
-                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
-                                <path d="M4 22h16"/>
-                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/>
-                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/>
-                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>
-                            </svg>
+                            <i class="fa-solid fa-trophy"></i>
                         </div>
                         <div class="award-content">
                             <h3>Permata Youth Preneur 2018</h3>
@@ -295,10 +256,7 @@
                     </div>
                     <div class="award-card">
                         <div class="award-icon medal">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="8" r="7"/>
-                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
-                            </svg>
+                            <i class="fa-solid fa-medal"></i>
                         </div>
                         <div class="award-content">
                             <h3>LINE Creativate 2018 - Chatbot Competition</h3>
@@ -312,10 +270,7 @@
                     </div>
                     <div class="award-card">
                         <div class="award-icon medal">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="8" r="7"/>
-                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
-                            </svg>
+                            <i class="fa-solid fa-medal"></i>
                         </div>
                         <div class="award-content">
                             <h3>DBS Live More Society: Developer Challenge 2</h3>
@@ -339,6 +294,48 @@
                     <p>Some of my recent work</p>
                 </div>
                 <div class="projects-grid">
+                    <div class="project-card" data-type="snapshot" 
+                         data-screenshots='["assets/snapshots/yui-ai/1_yuai.jpeg", "assets/snapshots/yui-ai/2_yuiai.jpeg"]'>
+                        <div class="project-image">
+                            <img src="assets/snapshots/yui-ai/thumbnail.png" alt="Yui AI">
+                        </div>
+                        <div class="project-content">
+                            <h3>Yui AI</h3>
+                            <p>
+                                An interface developed as an early-stage prototype for a personal AI assistant, with its personality inspired by Yui from the anime Sword Art Online. The AI is built on the LLaMA 4 Scout 17B 16E Instruct base model.
+                                <br>
+                                <small>
+                                <br>
+                                <b>Frontend:</b> Android, Kotlin, Jetpack Compose
+                                <br>
+                                <b>Backend:</b> ElysiaJS, TypeScript
+                                <br>
+                                <b>AI Model:</b> LLaMA 4 Scout 17B 16E Instruct
+                                </small>
+                            </p>
+                            
+                            <div class="tech-tags">
+                                <span class="tech-tag">Native Android</span>
+                                <span class="tech-tag">Kotlin</span>
+                                <span class="tech-tag">Jetpack Compose</span>
+                                <span class="tech-tag">Android Studio</span>
+                                <span class="tech-tag">ElysiaJS</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Bun</span>
+                                <span class="tech-tag">LLaMA 4 Scout 17B 16E Instruct</span>
+                            </div>
+                            <div class="project-buttons">
+                                <button class="btn-filled snapshot-btn">
+                                    <i class="fa-solid fa-images"></i>
+                                    Snapshots
+                                </button>
+                                <a href="https://github.com/DzakwanDawsie/chorona" class="btn-outline" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="project-card" data-type="live">
                         <div class="project-image">
                             <img src="assets/snapshots/serenity/thumbnail.png" alt="Serenity">
@@ -350,7 +347,16 @@
                               Main Features:<br>
                               - Social Media Screen Time Monitoring <br>
                               - Break Reminder <br>
-                              - Predict Sentiment <br>
+                              - Predict Sentiment
+                              <br>
+                              <small>
+                                <br>
+                                <b>Frontend:</b> Android, Kotlin
+                                <br>
+                                <b>Backend:</b> Hapi, Javascript
+                                <br>
+                                <b>AI Model:</b> Artificial Neural Network (ANN) for Binary Classification
+                              </small>
                             </p>
                             <div class="tech-tags">
                                 <span class="tech-tag">Native Android</span>
@@ -359,12 +365,12 @@
                             </div>
                             <div class="project-buttons">
                                 <a href="https://www.linkedin.com/posts/dzakwan-dawsie_lifeatbangkit-bepchallenge-2ndchallenge-activity-7277331532183171072-KYMV" class="btn-filled" target="_blank">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                        <polyline points="15 3 21 3 21 9"/>
-                                        <line x1="10" y1="14" x2="21" y2="3"/>
-                                    </svg>
+                                    <i class="fa-brands fa-linkedin"></i>
                                     Presentation
+                                </a>
+                                <a href="https://github.com/Serenity-C242-PS479/Serenity-C242-PS479-MD" class="btn-outline" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                    GitHub
                                 </a>
                             </div>
                         </div>
@@ -376,7 +382,14 @@
                         </div>
                         <div class="project-content">
                             <h3>Chorona</h3>
-                            <p>An Android application that monitors the development of Covid-19 cases across different regions in Indonesia. It features a prevention tips page to help users recognize symptoms and stay safe, as well as an integrated chatbot for health-related consultations.</p>
+                            <p>
+                                An Android application that monitors the development of Covid-19 cases across different regions in Indonesia. It features a prevention tips page to help users recognize symptoms and stay safe, as well as an integrated chatbot for health-related consultations.
+                                <br>
+                                <small>
+                                <br>
+                                <b>Frontend:</b> Android, Java
+                                </small>
+                            </p>
                             <div class="tech-tags">
                                 <span class="tech-tag">Native Android</span>
                                 <span class="tech-tag">Java</span>
@@ -384,13 +397,13 @@
                             </div>
                             <div class="project-buttons">
                                 <button class="btn-filled snapshot-btn">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                                        <circle cx="8.5" cy="8.5" r="1.5"/>
-                                        <polyline points="21 15 16 10 5 21"/>
-                                    </svg>
+                                    <i class="fa-solid fa-images"></i>
                                     Snapshots
                                 </button>
+                                <a href="https://github.com/DzakwanDawsie/chorona" class="btn-outline" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                    GitHub
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -400,20 +413,97 @@
                         </div>
                         <div class="project-content">
                             <h3>Peoes</h3>
-                            <p>A simple web-based Point of Sale (POS) application designed to assist cashiers in handling orders, managing inventory, and monitoring transactions.</p>
+                            <p>
+                                A simple web-based Point of Sale (POS) application designed to assist cashiers in handling orders, managing inventory, and monitoring transactions.
+                                <br>
+                                <small>
+                                <br>
+                                <b>Frontend:</b> Next.js, Javascript
+                                </small>
+                            </p>
                             <div class="tech-tags">
                                 <span class="tech-tag">Node.js</span>
                                 <span class="tech-tag">Next</span>
                                 <span class="tech-tag">Web Storage</span>
+                                <span class="tech-tag">Vercel</span>
                             </div>
                             <div class="project-buttons">
                                 <a href="https://peoes.vercel.app" class="btn-filled" target="_blank">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                        <polyline points="15 3 21 3 21 9"/>
-                                        <line x1="10" y1="14" x2="21" y2="3"/>
-                                    </svg>
+                                    <i class="fa-solid fa-up-right-from-square"></i>
                                     Live Demo
+                                </a>
+                                <a href="https://github.com/DzakwanDawsie/peoes" class="btn-outline" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-type="live">
+                        <div class="project-image">
+                            <img src="assets/snapshots/gabutlab/thumbnail.png" alt="Gabutlab">
+                        </div>
+                        <div class="project-content">
+                            <h3>Gabutlab</h3>
+                            <p>
+                                Simple community blog with a UI design parodying HoyoLab.
+                                <br>
+                                <small>
+                                <br>
+                                <b>Frontend:</b> Next.js, React
+                                <br>
+                                <b>Backend:</b> Node.js, Express
+                                <br>
+                                <b>Database:</b> Postgres
+                                </small>
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">Postgres</span>
+                                <span class="tech-tag">Vercel</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://gabutlab.vercel.app" class="btn-filled" target="_blank">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/DzakwanDawsie/gabutlab-webapp" class="btn-outline" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                    Github
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-type="live">
+                        <div class="project-image">
+                            <img src="external/bookshelf/assets/img/thumbnail.jpg" alt="Simple Bookshelf">
+                        </div>
+                        <div class="project-content">
+                            <h3>Simple Bookshelf</h3>
+                            <p>
+                                A simple bookshelf web application for tracking books that have been read or are yet to be finished.
+                                <br>
+                                <small>
+                                <br>
+                                <b>Frontend:</b> HTML 5, Javascript
+                                </small>
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">HTML 5</span>
+                                <span class="tech-tag">Javascript</span>
+                                <span class="tech-tag">Web Storage</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="external/bookshelf/index.html" class="btn-filled" target="_blank">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/DzakwanDawsie/dzakwandawsie.github.io/tree/main/external/bookshelf" class="btn-outline" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                    GitHub
                                 </a>
                             </div>
                         </div>
@@ -432,36 +522,12 @@
                             </div>
                             <div class="project-buttons">
                                 <button class="btn-filled snapshot-btn">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                                        <circle cx="8.5" cy="8.5" r="1.5"/>
-                                        <polyline points="21 15 16 10 5 21"/>
-                                    </svg>
+                                    <i class="fa-solid fa-images"></i>
                                     Snapshots
                                 </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card" data-type="live">
-                        <div class="project-image">
-                            <img src="external/bookshelf/assets/img/thumbnail.jpg" alt="Simple Bookshelf">
-                        </div>
-                        <div class="project-content">
-                            <h3>Simple Bookshelf</h3>
-                            <p>A simple bookshelf web application for tracking books that have been read or are yet to be finished.</p>
-                            <div class="tech-tags">
-                                <span class="tech-tag">HTML 5</span>
-                                <span class="tech-tag">Javascript</span>
-                                <span class="tech-tag">Web Storage</span>
-                            </div>
-                            <div class="project-buttons">
-                                <a href="external/bookshelf/index.html" class="btn-filled" target="_blank">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                        <polyline points="15 3 21 3 21 9"/>
-                                        <line x1="10" y1="14" x2="21" y2="3"/>
-                                    </svg>
-                                    Live Demo
+                                <a href="#" class="btn-outline" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                    GitHub
                                 </a>
                             </div>
                         </div>
@@ -493,14 +559,10 @@
                     <h4>Connect</h4>
                     <div class="footer-social">
                         <a href="https://github.com/DzakwanDawsie" target="_blank" aria-label="GitHub">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
+                            <i class="fa-brands fa-github"></i>
                         </a>
                         <a href="http://linkedin.com/in/dzakwan-dawsie" target="_blank" aria-label="LinkedIn">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                            </svg>
+                            <i class="fa-brands fa-linkedin"></i>
                         </a>
                     </div>
                 </div>
@@ -515,10 +577,7 @@
             <div class="modal-header">
                 <h3 id="modalTitle">Project Snapshots</h3>
                 <button class="modal-close" id="closeModal" aria-label="Close modal">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="18" y1="6" x2="6" y2="18"/>
-                        <line x1="6" y1="6" x2="18" y2="18"/>
-                    </svg>
+                    <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
             <div class="modal-body">
